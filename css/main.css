@@ -1,0 +1,134 @@
+@import url("https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@100;200;300;400;500;600;700&display=swap");
+
+:root {
+  --main: #00b533;
+  --main_light: rgba(0, 181, 51, 0.3);
+  --dark: #00282f;
+  --dark_light: #024855;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+  scroll-behavior: smooth;
+  outline: none;
+}
+i.fi {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body {
+  height: 100vh;
+  background: var(--dark);
+  background: url("https://cdn.lifehacker.ru/wp-content/uploads/2016/11/gugl-ii-obl_1479253507-1280x640.png");
+  flex-wrap: wrap;
+  font-weight: bold;
+  color: #fff;
+  overflow: hidden;
+}
+input {
+  background: inherit;
+}
+.chat {
+  margin: 50px auto;
+  padding: 20px;
+  width: 500px;
+  /* background: var(--dark_light); */
+  border-radius: 20px;
+  backdrop-filter: saturate(180%) blur(20px);
+}
+
+/* Chat List */
+.chat .list {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  overflow: auto;
+}
+.chat .list::-webkit-scrollbar {
+  width: 10px;
+  background: var(--dark);
+  border-radius: 5px;
+  overflow: hidden;
+}
+.chat .list::-webkit-scrollbar-thumb {
+  background: var(--main);
+  border-radius: 5px;
+}
+.chat .list li {
+  width: 65%;
+  padding: 15px;
+  border-radius: 20px;
+  background: var(--dark);
+  transition: 0.3s;
+  position: relative;
+}
+.chat .list li span.remove {
+  margin: auto;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 5px;
+  cursor: pointer;
+}
+.chat .list li.admin {
+  margin-left: auto;
+  margin-right: 10px;
+  background: var(--main);
+}
+/* Chat Add */
+.chat .add {
+  margin: 10px 0 0;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.chat .add input {
+  width: 100%;
+  height: 55px;
+  border: 3px solid var(--dark);
+  padding: 10px 50px 10px 15px;
+  border-radius: 100px;
+  font-size: 20px;
+  color: #fff;
+}
+.chat .add button {
+  position: absolute;
+  top: 7px;
+  right: 7px;
+  width: 40px;
+  height: 40px;
+  border: none;
+  background: var(--main);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  color: #fff;
+  cursor: pointer;
+}
+.chat .add button i {
+  margin-top: 2px;
+}
+.chat .add button.client {
+  right: 50px;
+  background: var(--dark);
+}
+.chat .add button.client i {
+  transform: rotateY(180deg);
+}

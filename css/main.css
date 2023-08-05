@@ -25,8 +25,9 @@ i.fi {
 }
 body {
   height: 100vh;
-  background: var(--dark);
-  background: url("https://cdn.lifehacker.ru/wp-content/uploads/2016/11/gugl-ii-obl_1479253507-1280x640.png");
+  background: var(--dark)
+    url("https://w.forfun.com/fetch/4e/4ee2e6367c8744c0cea462b9382cd6ba.jpeg")
+    center/cover;
   flex-wrap: wrap;
   font-weight: bold;
   color: #fff;
